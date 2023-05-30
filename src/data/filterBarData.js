@@ -24,17 +24,17 @@ export const sortMenu = [
 export const brandsMenu = [
     {
         id: 1,
-        label: "JBL",
+        label: "Facebok",
         checked: false,
     },
     {
         id: 2,
-        label: "BoAt",
+        label: "Youtube",
         checked: false,
     },
     {
         id: 3,
-        label: "Sony",
+        label: "Instagram",
         checked: false,
     },
 ];
@@ -42,22 +42,22 @@ export const brandsMenu = [
 export const categoryMenu = [
     {
         id: 1,
-        label: "Headphones",
+        label: "Gaming",
         checked: false,
     },
     {
         id: 2,
-        label: "Earbuds",
+        label: "Fitness",
         checked: false,
     },
     {
         id: 3,
-        label: "Earphones",
+        label: "Travel",
         checked: false,
     },
     {
         id: 4,
-        label: "Neckbands",
+        label: "Food",
         checked: false,
     },
 ];

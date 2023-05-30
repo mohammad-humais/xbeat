@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext,useState,useEffect } from 'react';
 import { BsExclamationCircle } from 'react-icons/bs';
 import useDocTitle from '../hooks/useDocTitle';
 import FilterBar from '../components/filters/FilterBar';
@@ -6,13 +6,28 @@ import ProductCard from '../components/product/ProductCard';
 import Services from '../components/common/Services';
 import filtersContext from '../contexts/filters/filtersContext';
 import EmptyView from '../components/common/EmptyView';
-
+import { Api } from "../utils/Api";
+import { getAllProductEndpoint } from "../utils/Endpoint";
 
 const AllProducts = () => {
-
+    const [products, setProducts] = useState([]);
     useDocTitle('All Products');
 
-    const { allProducts } = useContext(filtersContext);
+    const getAllProducts = async () => {
+        const { statusCode, data } = await Api.getAllProducts(
+          getAllProductEndpoint,
+          {}
+        );
+        console.log("View all data", data);
+        if(statusCode === true){
+        setProducts(data);
+        }
+    
+      };
+      useEffect(() => {
+        getAllProducts();
+      }, []);
+    // const { allProducts } = useContext(filtersContext);
 
 
     return (
@@ -22,10 +37,10 @@ const AllProducts = () => {
 
                 <div className="container">
                     {
-                        allProducts.length ? (
+                        products.length ? (
                             <div className="wrapper products_wrapper">
                                 {
-                                    allProducts.map(item => (
+                                    products.map(item => (
                                         <ProductCard
                                             key={item.id}
                                             {...item}

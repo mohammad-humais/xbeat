@@ -91,7 +91,7 @@ const FilterBarOptions = () => {
 
                 {/* Filter by Brands */}
                 <div className="filter_block">
-                    <h4>Brands</h4>
+                    <h4>Category</h4>
                     <ul className="filter_menu">
                         {
                             updatedBrandsMenu.map(item => {
@@ -115,7 +115,7 @@ const FilterBarOptions = () => {
 
                 {/* Filter by Category */}
                 <div className="filter_block">
-                    <h4>Category</h4>
+                    <h4>Sub Category</h4>
                     <ul className="filter_menu">
                         {
                             updatedCategoryMenu.map(item => {

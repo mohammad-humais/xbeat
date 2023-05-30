@@ -1,27 +1,17 @@
 export const dropdownMenu = [
     {
         id: 1,
-        link: "Orders",
+        link: "My Profile",
         path: "*",
     },
     {
         id: 2,
-        link: "Wishlist",
+        link: "My orders",
         path: "*",
     },
     {
         id: 3,
-        link: "Gift Cards",
+        link: "Wishlist",
         path: "*",
-    },
-    {
-        id: 4,
-        link: "Saved Cards",
-        path: "*",
-    },
-    {
-        id: 5,
-        link: "Saved Addresses",
-        path: "*",
-    },
+    }
 ];

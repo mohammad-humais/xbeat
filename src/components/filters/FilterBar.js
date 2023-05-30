@@ -13,7 +13,7 @@ const FilterBar = () => {
         <>
             {/*===== Filterbar-default =====*/}
             <aside id="filterbar">
-                <div className="filterbar_wrapper">
+                <div className="filterbar_wrapper light-color">
                     <FilterBarOptions />
                 </div>
             </aside>

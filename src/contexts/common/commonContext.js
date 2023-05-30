@@ -19,6 +19,7 @@ const CommonProvider = ({ children }) => {
 
     // Form actions
     const toggleForm = (toggle) => {
+        
         return dispatch({
             type: 'TOGGLE_FORM',
             payload: { toggle }

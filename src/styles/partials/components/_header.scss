@@ -1,11 +1,12 @@
 #header {
-    position: fixed;
+    // position: fixed;
     top: 0;
     left: 0;
     z-index: 99;
     width: 100%;
     @include padding-y(0.8rem, 0.8rem);
     @include transition(background-color, 0.2s, linear);
+    background-color: var(--black-color);
 
     &.sticky {
         background-color: var(--black-color);

@@ -4,7 +4,7 @@ import FeaturedSlider from '../components/sliders/FeaturedSlider';
 import SectionsHead from '../components/common/SectionsHead';
 import TopProducts from '../components/product/TopProducts';
 import Services from '../components/common/Services';
-
+import ViewAllproducts from "./ViewAllProducts"
 
 const Home = () => {
 
@@ -14,17 +14,17 @@ const Home = () => {
                 <HeroSlider />
             </section>
 
-            <section id="featured" className="section">
+            {/* <section id="featured" className="section">
                 <div className="container">
                     <SectionsHead heading="Featured Products" />
                     <FeaturedSlider />
                 </div>
-            </section>
+            </section> */}
 
             <section id="products" className="section">
                 <div className="container">
-                    <SectionsHead heading="Top Products" />
-                    <TopProducts />
+                    <SectionsHead heading="View All Products" />
+                    <ViewAllproducts />
                 </div>
             </section>
 

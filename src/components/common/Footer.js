@@ -18,11 +18,11 @@ const Footer = () => {
 
     return (
         <footer id="footer">
-            <div className="container">
+            <div className="container light-color">
                 <div className="wrapper footer_wrapper">
                     <div className="foot_about">
                         <h2>
-                            <Link to="/">X-Beat</Link>
+                            <Link to="/">SellDigital</Link>
                         </h2>
                         <div className="foot_subs">
                             <p>Subscribe to our Email alerts to receive early discount offers, and new products info.</p>
@@ -67,13 +67,13 @@ const Footer = () => {
 
             <div className="separator"></div>
 
-            <div className="sub_footer">
+            <div className="sub_footer light-color">
                 <div className="container">
                     <div className="sub_footer_wrapper">
                         <div className="foot_copyright">
                             <p>
-                                {currYear} | XBeat. All Rights Reserved.
-                                Built by | <a href="https://gulshansongara.netlify.app/">Gulshan Songara</a>
+                                {currYear} | SellDigital. All Rights Reserved.
+                                {/* Built by | <a href=""></a> */}
                             </p>
                         </div>
                         <div className="foot_social">

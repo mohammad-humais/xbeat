@@ -6,27 +6,29 @@ import SectionsHead from './SectionsHead';
 const Services = () => {
   return (
     <>
-      <section id="services" className="section">
+      <section id="services" className="section" >
+      <SectionsHead heading="Our Advantages" />
+      {/* <div style={{"background-color":"black", "color": "white", paddingBottom:"30px"}}> */}
         <div className="container">
-          <SectionsHead heading="Our Advantages" />
-          <div className="wrapper services_wrapper">
-            {
-              servicesData.map((item) => {
-                const { id, icon, title, info } = item;
+            <div className="wrapper services_wrapper">
+              {
+                servicesData.map((item) => {
+                  const { id, icon, title, info } = item;
 
-                return (
-                  <div className="services_card" key={id}>
-                    <div className="services_icon">{icon}</div>
-                    <div className="services_details">
-                      <h4>{title}</h4>
-                      <p>{info}</p>
+                  return (
+                    <div className="services_card" key={id}>
+                      <div className="services_icon">{icon}</div>
+                      <div className="services_details">
+                        <h4>{title}</h4>
+                        <p>{info}</p>
+                      </div>
                     </div>
-                  </div>
-                );
-              })
-            }
-          </div>
+                  );
+                })
+              }
+            </div>
         </div>
+      {/* </div> */}
       </section>
     </>
   );
